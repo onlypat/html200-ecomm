@@ -57,8 +57,6 @@ for (var i = 0; i < products.length; i=i+1)
     console.log("Description: " + products[i].description);
     console.log("");
   }
-  
-
 
 
 
