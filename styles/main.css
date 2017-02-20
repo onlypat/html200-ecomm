@@ -1,0 +1,74 @@
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top:1.9rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  margin: auto;
+}
+nav {
+  text-align: center;
+  width: 100%;
+}
+
+nav li {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0.4rem 1.9rem 0.6rem 1.9rem;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+h1 {
+  padding-top: .9rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'helvetica', sans-serif;
+  color: blue;
+}
+
+header {
+  padding: 1rem;
+}
+
+
+img {
+  width: 15em;
+  height: 20rem 
+}
+
+nav, h4, h5, p {
+  font-family: 'helvetica', sans-serif;
+  color: blue;
+}
+
+h2 {
+  font-family: 'helvetica', sans-serif;
+  color: blue;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.col-centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+

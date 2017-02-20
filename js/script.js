@@ -50,13 +50,40 @@ var products = [
 ]
 
 
-for (var i = 0; i < products.length; i=i+1)
-  {
-    console.log("Product: "+products[i].name);
-    console.log("Price: "+ "$" + products[i].price);
-    console.log("Description: " + products[i].description);
-    console.log("");
+function sumPrices(cartArray) {
+  // for loop through array, sum value of price attribute for each object
+  var total =0;
+  
+  
+  for(var i=0; i<cartArray.length; i++) {
+    //console.log(cartArray[i].price);
+    
+    total = total + cartArray[i].price;
+    
   }
+  
+  console.log(total);
+}
+
+
+function capture(){
+  console.log(document.filter.name.value);
+  event.preventDefault();
+}
+
+
+
+
+
+
+// 
+// for (var i = 0; i < products.length; i=i+1)
+//   {
+//     console.log("Product: "+products[i].name);
+//     console.log("Price: "+ "$" + products[i].price);
+//     console.log("Description: " + products[i].description);
+//     console.log("");
+//   }
 
 
 

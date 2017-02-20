@@ -7,53 +7,172 @@
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+   
+    <!-- bootstrap stuff -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+         <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- replace with your personal Font Awesome CDN link -->
   <script src="https://use.fontawesome.com/5a0d5dcce3.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
-      </ul>
-    </nav>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Hats</a></li>
+          <li><a href="#">Gloves</a></li>
+          <li><a href="#">Scarves</a></li>
+          <li class="cart-info">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </nav>
 
-    <h1>Winter Wear Warehouse</h1>
-  </header>
+      <h1>Winter Wear Warehouse</h1>
+    </header>
 
-  <aside>
-    <form>
-      <label>Filter By:
-        <select name="filter">
-          <option value="">Choose One</option>
-          <option value="price">Price</option>
-          <option value="name">Name</option>
-        </select>
-      </label>
+    <aside>
+       <form name="filter" onsubmit="capture();">
+        <label>Filter By:
+          <select name="name">
+            <option value="">Choose One</option>
+            <option value="price">Price</option>
+            <option value="name">Name</option>
+          </select>
+        </label>
 
-      <input type="submit" value="Sort">
-    </form>
-  </aside>
+        <input type="submit" value="Sort">
+      </form>
+    </aside>
 
-  <section>
-    <h2>Scarves</h2>
+    <section>
+      <h2>Scarves</h2>
+         
 
-    <div class="item-container">
-      <div class="item">
-        <h2>Reversible Plaid</h2>
-        <h4>$26.99</h4>
-        <img src="images/reversible-plaid.jpg" alt="Supersoft reversible plaid scarf">
-        <p>"Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="item-container">
+            <div class="item">
+              <h2>Reversible Plaid</h2>
+              <h4>$26.99</h4>
+              <img src="images/reversible-plaid.jpg" alt="Supersoft reversible plaid scarf">
+              <p>"Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+            </div>
+          </div>
         </div>
-    </div>
-  </section>
+      
+      
+      
+        <div class="col-md-4">
+          <div class="item-container">
+            <div class="item">
+              <h2>Wool Cable Knit</h2>
+              <h4>$49.99</h4>
+              <img src="images/wool-cable.jpeg" alt="Warm and stylish wool knit scarf">
+              <p>"Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported."</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+        <div class="col-md-4">
+          <div class="item-container">
+            <div class="item">
+              <h2>Northern Lights</h2>
+              <h4>$29.99</h4>
+              <img src="images/northern-lights.jpg" alt="Touchably soft cotton handmade scarf from India">
+              <p>"Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        <div class="row">
+        <div class="col-md-4">
+          <div class="item-container">
+            <div class="item">
+              <h2>Ombre Infinity</h2>
+              <h4>$11.99</h4>
+              <img src="images/ombre-infinity.jpg" alt="Colorful, soft and chunky scarf">
+              <p>"A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic."</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+        <div class="col-md-4">
+          <div class="item-container">
+            <div class="item">
+              <h2>Fringed Plaid</h2>
+              <h4>$18.99</h4>
+              <img src="images/fringed-plaid.jpeg" alt="Big and soft with versatility and style make this scarf a must-have">
+              <p>"Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic."</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+        <div class="col-md-4">
+          <div class="item-container">
+            <div class="item">
+              <h2>Multi Color</h2>
+              <h4>$22.99</h4>
+              <img src="images/multi-color.jpeg" alt="Multicolor, fashionable and harmonious scarf for every season">
+              <p>"The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+      <div class="row">
+        <div class="col-md-6">
+          <div class="item-container">
+            <div class="item">
+              <h2>Etro Paisley-Print Silk</h2>
+              <h4>$249.99</h4>
+              <img src="images/etro.png" alt="Paisley and luxurious, and silky smooth scarf">
+              <p>"Luxurious silk scarf with subtle paisley pattern. 100% silk."</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+        <div class="col-md-6">
+          <div class="item-container">
+            <div class="item">
+              <h2>Ashby Twill</h2>
+              <h4>$70.99</h4>
+              <img src="images/twill.jpg" alt="Woven twill scarf with a zig zag texture, timeless">
+              <p>"Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+    </section>
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
