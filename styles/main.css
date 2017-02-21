@@ -1,3 +1,7 @@
+body {
+  font-family: 'Arbutus Slab', serif;
+}
+
 .item-container {
   display: flex;
   flex-direction: row;
@@ -37,7 +41,7 @@ h1 {
   padding-top: .9rem;
   text-align: center;
   font-size: 1.8rem;
-  font-family: 'helvetica', sans-serif;
+  font-family: 'Arbutus Slab', serif;
   color: blue;
 }
 
@@ -52,12 +56,12 @@ img {
 }
 
 nav, h4, h5, p {
-  font-family: 'helvetica', sans-serif;
-  color: blue;
+  font-family: 'Arbutus Slab', serif;
+  color: black;
 }
 
 h2 {
-  font-family: 'helvetica', sans-serif;
+  font-family: 'Arbutus Slab', serif;
   color: blue;
   text-align: center;
   font-size: 1.2rem;
