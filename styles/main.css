@@ -75,4 +75,23 @@ h2 {
 }
 
 
+ /*super cool media queries for logo */
+      @media only screen and (min-width: 765px) { 
+        p {color:saddlebrown
+         }
+        }
+
+        @media only screen and (min-width: 480px) and (max-width: 767px) { 
+      p {font-size:2em;
+  
+        }
+      }
+
+      @media only screen and (max-width: 479px) { 
+        p { font-size: 3em; }
+        h4 {float: right;
+      }
+      
+
+
 
