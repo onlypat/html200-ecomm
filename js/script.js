@@ -225,7 +225,25 @@ function ATmodifyCart() {
    var sumTotal = 0;
 
 
+   
+   
+   function checkout(cartArray){
+  var total = 0;
+  
+  for (var i=0; i < cartArray.length; i++){
+    
+   if(cartArray[i].price){
+    total = total + cartArray[i].price;
+   }
+    
+    
+  console.log(total);
+  }
+}
 
+  function updateNumber() {
+   var number = document.getElementById('number');
+   number.innerHTML = cart.length;
 
 
 
